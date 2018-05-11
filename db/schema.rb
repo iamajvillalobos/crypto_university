@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_11_130642) do
+ActiveRecord::Schema.define(version: 2018_05_11_143259) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2018_05_11_130642) do
   create_table "professors_subjects", force: :cascade do |t|
     t.bigint "professor_id"
     t.bigint "subject_id"
+    t.index ["professor_id", "subject_id"], name: "by_professor_and_subject", unique: true
     t.index ["professor_id"], name: "index_professors_subjects_on_professor_id"
     t.index ["subject_id"], name: "index_professors_subjects_on_subject_id"
   end
