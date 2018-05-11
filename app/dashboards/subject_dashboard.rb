@@ -9,6 +9,7 @@ class SubjectDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     professors: Field::HasMany,
+    ratings: Field::HasMany,
     id: Field::Number,
     name: Field::String,
     slug: Field::String,
@@ -23,15 +24,16 @@ class SubjectDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :professors,
+    :ratings,
     :id,
     :name,
-    :slug,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :professors,
+    :ratings,
     :id,
     :name,
     :slug,
@@ -44,6 +46,7 @@ class SubjectDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :professors,
+    :ratings,
     :name,
     :slug,
   ].freeze

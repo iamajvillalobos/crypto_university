@@ -9,6 +9,7 @@ class RatingDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     professor: Field::BelongsTo,
+    subject: Field::BelongsTo,
     id: Field::Number,
     amount: Field::Number,
     created_at: Field::DateTime,
@@ -22,15 +23,16 @@ class RatingDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :professor,
+    :subject,
     :id,
     :amount,
-    :created_at,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :professor,
+    :subject,
     :id,
     :amount,
     :created_at,
@@ -42,6 +44,7 @@ class RatingDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :professor,
+    :subject,
     :amount,
   ].freeze
 
