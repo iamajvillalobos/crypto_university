@@ -23,10 +23,8 @@ class SubjectDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :professors,
-    :ratings,
-    :id,
     :name,
+    :professors,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -45,16 +43,15 @@ class SubjectDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :professors,
-    :ratings,
     :name,
     :slug,
+    :professors,
   ].freeze
 
   # Overwrite this method to customize how subjects are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(subject)
-  #   "Subject ##{subject.id}"
-  # end
+  def display_resource(subject)
+    "#{subject.slug}"
+  end
 end

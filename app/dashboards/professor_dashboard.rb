@@ -23,38 +23,36 @@ class ProfessorDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :ratings,
-    :subjects,
-    :id,
     :first_name,
+    :last_name,
+    :subjects,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
+    # :id,
+    # :first_name,
+    # :last_name,
+    # :created_at,
+    # :updated_at,
     :ratings,
     :subjects,
-    :id,
-    :first_name,
-    :last_name,
-    :created_at,
-    :updated_at,
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :ratings,
-    :subjects,
     :first_name,
     :last_name,
+    :subjects,
   ].freeze
 
   # Overwrite this method to customize how professors are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(professor)
-  #   "Professor ##{professor.id}"
-  # end
+  def display_resource(professor)
+    "#{professor.first_name} #{professor.last_name}"
+  end
 end
