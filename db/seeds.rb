@@ -1,19 +1,18 @@
 subjects_hash = [
-  { name: "Introduction to Computing I", slug: "CS 21A" },
   { name: "Calculus for Computer Science", slug: "MA 20.2" },
+  { name: "Data Structures and Algorithms", slug: "CS 110" },
+  { name: "Introduction to Computing I", slug: "CS 21A" },
   { name: "Introduction to Computing II", slug: "CS 21B" },
   { name: "Math for Computer Science I", slug: "AMC 124" },
-  { name: "Data Structures and Algorithms", slug: "CS 110" },
-  { name: "Physics for Computer Scientists", slug: "PS 21" },
-  { name: "Data Structures and Algorithms", slug: "CS 110" },
-  { name: "Math for Computer Science II", slug: "AMC 125" }
+  { name: "Math for Computer Science II", slug: "AMC 125" },
+  { name: "Physics for Computer Scientists", slug: "PS 21" }
 ]
 
 professors_hash = [
-  { first_name: "Mackenzie", last_name: "Whittaker" },
-  { first_name: "Luther", last_name: "Lees" },
   { first_name: "Cathal", last_name: "Handley" },
-  { first_name: "Helena", last_name: "Holman" }
+  { first_name: "Helena", last_name: "Holman" },
+  { first_name: "Luther", last_name: "Lees" },
+  { first_name: "Mackenzie", last_name: "Whittaker" }
 ]
 
 # create subjects
