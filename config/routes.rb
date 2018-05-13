@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root to: "classes#index"
   resources :classes, only: [:index, :show] do
-    resources :ratings, only: [:new, :create]
+    resources :professor, only: [:show] do
+      resources :ratings, only: [:new, :create]
+    end
   end
 
   namespace :admin do

@@ -6,9 +6,9 @@
           img.card-img-top[src="https://picsum.photos/500"]
           h2.card-title= "#{full_name}"
           .card-actions
-            = cell(Teachers::Cell::Rating, teacher: model[:teacher], course: model[:course]).()
+            = cell(Teachers::Cell::Rating, teacher: teacher, course: course).()
       .col.form-section
-        = form_for model[:rating], url: class_ratings_path, method: :post, html: { class: 'form' } do |f|
+        = form_for model[:rating], url: class_professor_ratings_path, method: :post, html: { class: 'form' } do |f|
 
           .form-group
             = f.label :description, "What can you say about #{full_name}?"
@@ -16,7 +16,7 @@
 
           .form-group
             = f.label :amount, "Your rating from 1 - 5"
-            = f.number_field:amount, in: 1..5, class: 'form-control'
-          
+            = f.number_field :amount, in: 1..5, class: 'form-control'
+
           .actions
             = f.submit 'Submit Rating', class: 'btn btn-lg btn-primary rating-btn'
