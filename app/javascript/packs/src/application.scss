@@ -10,6 +10,20 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+a { 
+  text-decoration: none !important; 
+} 
+
+.back-button {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  margin-left: 3rem;
+  background: $blue;
+  color: $white;
+  padding: 0.8rem 1rem;
+}
+
 @import 'navigation.scss';
 @import 'course_banner.scss';
 @import 'course_card.scss';
+@import 'course_showcase.scss';

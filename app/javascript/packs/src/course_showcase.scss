@@ -1,0 +1,23 @@
+.course-showcase {
+  margin: 1rem 3rem 3rem 3rem;
+  background: $white;
+  display: flex;
+
+  .photo {
+    width: 40%;
+  }
+
+  .details {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .description {
+    @extend .text-secondary;
+    text-align: justify;
+  }
+}
