@@ -2,7 +2,7 @@
   - teachers.each do |teacher|
     .col-lg-4.d-flex
       .card.teacher-card
-        img.card-img-top[src="https://picsum.photos/500"]
+        img.card-img-top[src="#{teacher.image_url}"]
         h2.card-title= "#{teacher.first_name} #{teacher.last_name}"
         .card-actions
           = cell(Teachers::Cell::Rating, teacher: teacher, course: course).()

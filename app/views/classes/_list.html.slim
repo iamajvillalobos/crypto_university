@@ -1,8 +1,8 @@
 .row.course-list
   - classes.each do |course|
-    .col.d-flex.align-items-stretch
+    .col.d-flex
       .card.course-card
-        img.card-img-top[src="https://picsum.photos/500"]
+        img.card-img-top[src="#{course.image_url}"]
         h2.card-title= course.slug
         .card-body
           p.card-text= course.name
