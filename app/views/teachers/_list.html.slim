@@ -6,4 +6,4 @@
         h2.card-title= "#{teacher.first_name} #{teacher.last_name}"
         .card-actions
           = cell(Teachers::Cell::Rating, teacher: teacher, course: course).()
-          = link_to "Rate", "", class: "rate-button"
+          = link_to "Rate", new_class_rating_path(course, teacher: teacher), class: "rate-button"
