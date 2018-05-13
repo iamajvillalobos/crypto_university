@@ -1,7 +1,13 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-.navigation {
+$gray: #F8F9FA;
+$white: #FFFFFF;
+
+body {
+	background: $gray;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.1rem;
 }
+
+@import 'navigation.scss';
+@import 'course_banner.scss';
