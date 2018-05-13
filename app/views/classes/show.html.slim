@@ -4,6 +4,12 @@
       .back-button Back to Courses
 
   .row
+    .flashes
+      - if flash[:success]
+        .alert.alert-primary.mb-0.font-weight-bold
+          = flash[:success]
+
+  .row
     .course-showcase
       .photo
         img.card-img-top[src="https://picsum.photos/500"]

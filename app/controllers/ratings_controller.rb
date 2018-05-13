@@ -16,8 +16,10 @@ class RatingsController < ApplicationController
 
     if new_rating.save
       redirect_to class_path(find_subject)
+      flash[:success] = "Thank you for rating our teacher."
     else
-      render :new
+      redirect_to new_class_professor_rating_path(find_subject, find_teacher)
+      flash[:error] = "Please fill up all the fields"
     end
   end
 
