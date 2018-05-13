@@ -6,7 +6,5 @@
         h2.card-title= course.slug
         .card-body
           p.card-text= course.name
-          = link_to "#", class: "card-link" do
-            | Explore
-            span.fas.fa-angle-double-right
-    
+          .card-link
+            = link_to "Explore", "#"

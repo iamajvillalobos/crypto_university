@@ -11,8 +11,7 @@
     font-weight: bold;
     letter-spacing: 0.1rem;
     margin: 0;
-    padding: 1rem;
-  }
+    padding: 1rem; }
 
   .card-body {
     display: flex;
@@ -22,7 +21,18 @@
     padding-top: 0rem;
   }
 
-  svg {
-    padding-left: 5px;
+  .card-link {
+    background: $blue;
+    padding: 0.5rem;
+  }
+
+  .card-link a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  .card-link:hover {
+    background: darken($blue, 10);
+    cursor: pointer;
   }
 }
