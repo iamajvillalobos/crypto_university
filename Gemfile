@@ -5,6 +5,7 @@ ruby '2.5.0'
 
 gem 'administrate', '~> 0.10'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'coffee-script', '~> 2.4', '>= 2.4.1'
 gem 'pg', '1.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.0'
