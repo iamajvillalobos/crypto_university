@@ -15,7 +15,7 @@ subjects_hash = [
     description: "This course prepares you to design, construct and manage enduring systems of smart contracts entrusted with significant value. We unfold essential knowledge and patterns you can use to confidently design and build your signature system."
   },
   { 
-    name: "Intro to Blockchain for Non-Technical",
+    name: "Intro to Blockchain",
     slug: "BC101",
     description: "This course is an introduction to Blockchain Technology, in general, It will teach you about the concepts underlying Blockchain Technology.
 The course will also provide an overview of the blockchain: how transactions are stored on the blockchain, how mining works through consensus, the differences between permissioned and permissionless blockchains."
