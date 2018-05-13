@@ -4,6 +4,7 @@
 $gray: #F8F9FA;
 $white: #FFFFFF;
 $blue: #157EFB;
+$yellow: #FDC02F;
 
 body {
 	background: $gray;
@@ -28,3 +29,7 @@ a {
 @import 'course_card.scss';
 @import 'course_showcase.scss';
 @import 'teacher_showcase.scss';
+
+.positive-star {
+  color: $yellow;
+}

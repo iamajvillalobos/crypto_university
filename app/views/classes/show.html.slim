@@ -6,7 +6,7 @@
   .row
     .course-showcase
       .photo
-        img.card-img-top[src="https://source.unsplash.com/450x450/?crypto"]
+        img.card-img-top[src="https://picsum.photos/500"]
       .details
         h2.title= @class.name
         p.description= @class.description
@@ -14,4 +14,4 @@
   .row
     .teacher-showcase
       h2.title Teachers
-      = render 'teachers/list', teachers: @teachers
+      = render 'teachers/list', teachers: @teachers, course: @class
