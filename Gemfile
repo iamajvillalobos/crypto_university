@@ -17,6 +17,11 @@ gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 gem 'slim'
 gem 'friendly_id', '~> 5.1.0'
+gem 'trailblazer'
+gem 'trailblazer-rails'
+gem 'trailblazer-cells'
+gem 'cells-rails'
+gem 'cells-slim'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
