@@ -1,0 +1,14 @@
+.row.teachers-list
+  - teachers.each do |teacher|
+    .col-lg-4.d-flex
+      .card.teacher-card
+        img.card-img-top[src="https://source.unsplash.com/450x450/?portrait"]
+        h2.card-title= "#{teacher.first_name} #{teacher.last_name}"
+        .card-actions
+          .rating
+            span.fas.fa-star
+            span.fas.fa-star
+            span.fas.fa-star
+            span.fas.fa-star
+            span.fas.fa-star
+          = link_to "Rate", "", class: "rate-button"

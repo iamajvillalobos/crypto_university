@@ -17,7 +17,7 @@ a {
 .back-button {
   margin-top: 1rem;
   margin-bottom: 0rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
   background: $blue;
   color: $white;
   padding: 0.8rem 1rem;
@@ -27,3 +27,4 @@ a {
 @import 'course_banner.scss';
 @import 'course_card.scss';
 @import 'course_showcase.scss';
+@import 'teacher_showcase.scss';

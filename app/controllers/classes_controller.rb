@@ -5,5 +5,6 @@ class ClassesController < ApplicationController
 
   def show
     @class = Subject.friendly.find(params[:id])
+    @teachers = @class.professors
   end
 end

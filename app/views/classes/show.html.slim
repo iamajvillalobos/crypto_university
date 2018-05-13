@@ -1,12 +1,17 @@
-.row
-  = link_to classes_path do
-    .back-button Back to Courses
+.container
+  .row
+    = link_to classes_path do
+      .back-button Back to Courses
 
-.row
-  .course-showcase
-    .photo
-      img.card-img-top[src="https://source.unsplash.com/450x450/?crypto"]
-    .details
-      h2.title= @class.name
-      p.description= @class.description
+  .row
+    .course-showcase
+      .photo
+        img.card-img-top[src="https://source.unsplash.com/450x450/?crypto"]
+      .details
+        h2.title= @class.name
+        p.description= @class.description
 
+  .row
+    .teacher-showcase
+      h2.title Teachers
+      = render 'teachers/list', teachers: @teachers

@@ -6,6 +6,6 @@ class Professor < ApplicationRecord
   validates :last_name, presence: true
 
   def average_rating
-    ratings.average(:amount).to_i
+    ratings.average(:amount)
   end
 end
