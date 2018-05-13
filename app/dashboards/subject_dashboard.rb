@@ -13,6 +13,7 @@ class SubjectDashboard < Administrate::BaseDashboard
     id: Field::Number,
     name: Field::String,
     slug: Field::String,
+    description: Field::Text,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -35,6 +36,7 @@ class SubjectDashboard < Administrate::BaseDashboard
     :id,
     :name,
     :slug,
+    :description,
     :created_at,
     :updated_at,
   ].freeze
