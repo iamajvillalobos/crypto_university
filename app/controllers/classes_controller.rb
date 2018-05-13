@@ -4,6 +4,6 @@ class ClassesController < ApplicationController
   end
 
   def show
-    @class = Subject.find(params[:id])
+    @class = Subject.friendly.find(params[:id])
   end
 end
