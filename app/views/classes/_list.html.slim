@@ -1,0 +1,12 @@
+.row.course-list
+  - classes.each do |course|
+    .col.d-flex.align-items-stretch
+      .card.course-card
+        img.card-img-top[src="https://source.unsplash.com/450x450/?crypto"]
+        h2.card-title= course.slug
+        .card-body
+          p.card-text= course.name
+          = link_to "#", class: "card-link" do
+            | Explore
+            span.fas.fa-angle-double-right
+    

@@ -1,0 +1,28 @@
+.course-list {
+  padding: 1rem;
+  padding-top: 0;
+  text-align: center;
+}
+
+.course-card {
+  margin-top: 1rem;
+
+  .card-title {
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 1rem;
+    padding-top: 0rem;
+  }
+
+  svg {
+    padding-left: 5px;
+  }
+}
