@@ -6,5 +6,6 @@
         h2.card-title= course.slug
         .card-body
           p.card-text= course.name
-          .card-link
-            = link_to "Explore", class_path(course)
+          = link_to class_path(course) do
+            .card-link
+              | Explore

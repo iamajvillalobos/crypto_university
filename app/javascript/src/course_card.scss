@@ -20,16 +20,14 @@
     align-content: center;
     padding: 1rem;
     padding-top: 0rem;
+
+    a { color: $white; }
   }
 
   .card-link {
-    background: $blue;
-    padding: 0.5rem;
-  }
-
-  .card-link a {
-    color: $white;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: $blue;
   }
 
   .card-link:hover {
