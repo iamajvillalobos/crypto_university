@@ -1,0 +1,22 @@
+.course-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $white;
+  margin: 3rem 5rem;
+  padding: 3rem;
+  @extend .border;
+  @extend .rounded;
+  @extend .shadow;
+  
+  .course-header {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+  }
+
+  .course-description {
+    margin: 1rem;
+    @extend .text-secondary;
+  }
+}
